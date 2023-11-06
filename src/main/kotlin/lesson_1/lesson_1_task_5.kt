@@ -6,6 +6,6 @@ fun main() {
     val minutes = (flightLength % 3600) / 60
     val seconds = (flightLength % 3600) % 60
 
-    println("${"%02d".format(hours)}:${"%02d".format(minutes)}:${"%02d".format(seconds)}")
+    println("%02d:%02d:%02d".format(hours, minutes, seconds))
 
 }
