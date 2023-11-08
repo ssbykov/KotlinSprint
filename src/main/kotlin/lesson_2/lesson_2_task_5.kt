@@ -7,6 +7,6 @@ fun main() {
     val rate = 16.7
     val years = 20
 
-    val newSum = (sum * (1 + rate / 100).pow(years) * 1000).toInt() / 1000.0
+    val newSum = "%.2f".format(sum * (1 + rate / 100).pow(years))
     println(newSum)
 }
