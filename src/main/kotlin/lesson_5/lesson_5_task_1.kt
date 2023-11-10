@@ -2,12 +2,10 @@ package lesson_5
 
 fun main() {
     println("Здравствуйте! Проверка, что вы не бот.")
-    println("Введите целое число до 100.")
-    val number1 = readLine()!!.toInt()
-    println("Введите второе целое число до 100.")
-    val number2 = readLine()!!.toInt()
-    println("Введите сумму ваших чисел.")
-    val sum = readLine()!!.toInt()
+    val number1 = (0..100).random()
+    val number2 = (0..100).random()
+    println("Введите сумму чисел: $number1 + $number2")
+    val sum = readln().toInt()
     val answer =
         if (number1 + number2 == sum)  "Добро пожаловать!"
         else "Доступ запрещен."
