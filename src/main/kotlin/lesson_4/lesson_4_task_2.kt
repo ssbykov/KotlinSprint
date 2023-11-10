@@ -1,8 +1,8 @@
 package lesson_4
 
-const val min_weight = 35
-const val max_weight = 100
-const val max_volume = 100
+const val MIN_WEIGHT = 35
+const val MAX_WEIGHT = 100
+const val MAX_VOLUME = 100
 
 fun main() {
 
@@ -14,11 +14,11 @@ fun main() {
 
     println(
         "Груз с весом $weight1 кг и объемом $volume1 л соответствует категории 'Average': " +
-                "${weight1 >= min_weight && weight1 <= max_weight && volume1 < max_volume}"
+                "${weight1 >= MIN_WEIGHT && weight1 <= MAX_WEIGHT && volume1 < MAX_VOLUME}"
     )
 
     println(
         "Груз с весом $weight2 кг и объемом $volume2 л соответствует категории 'Average': " +
-                "${weight2 >= min_weight && weight2 <= max_weight && volume2 < max_volume}"
+                "${weight2 >= MIN_WEIGHT && weight2 <= MAX_WEIGHT && volume2 < MAX_VOLUME}"
     )
 }
