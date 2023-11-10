@@ -1,10 +1,12 @@
 package lesson_4
 
+const val isSunny = true
+const val isOpen = true
+const val humidity = 20
+const val season = "winter"
+
 fun main() {
-    val isSunny = true
-    val isOpen = true
-    val humidity = 20
-    val season = "winter"
+
 
     println(
         "Благоприятные ли условия сейчас для роста бобовых?" +
