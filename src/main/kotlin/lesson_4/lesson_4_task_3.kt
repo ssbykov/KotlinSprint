@@ -7,9 +7,13 @@ const val SEASON = "winter"
 
 fun main() {
 
+    val isSunny = true
+    val isOpen = true
+    val humidity = 20
+    val season = "winter"
 
     println(
         "Благоприятные ли условия сейчас для роста бобовых?" +
-                " ${IS_SUNNY && IS_OPEN && HUMIDITY == 20 && SEASON != "winter"}"
+                " ${isSunny == IS_SUNNY && isOpen == IS_OPEN && humidity == HUMIDITY && season != SEASON}"
     )
 }
