@@ -17,11 +17,11 @@ fun main() {
     print("Погода благоприятная? 1 - да/ 0 - нет: ")
     val isWeather = readlnOrNull() == "1"
 
-    val approved =
+    val isApproved =
         (!isDamage && numberOfCrew in (MIN_TEAM_MEMBER..MAX_TEAM_MEMBER)
-                && quantityOfProvisions > MIN_PROVISIONS && isWeather) ||
-                (isDamage && numberOfCrew == MAX_TEAM_MEMBER && quantityOfProvisions >= MIN_PROVISIONS && isWeather)
+                && quantityOfProvisions > MIN_PROVISIONS) ||
+                (numberOfCrew == MAX_TEAM_MEMBER && quantityOfProvisions >= MIN_PROVISIONS && isWeather)
 
 
-    println(approved)
+    println(isApproved)
 }
