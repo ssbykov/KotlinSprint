@@ -9,10 +9,10 @@ fun main() {
     val isDamage = readlnOrNull() == "1"
 
     print("Введите количество членов экипажа: ")
-    val numberOfCrew = readlnOrNull()?.toInt()
+    val numberOfCrew = readln().toInt()
 
     print("Введите количество ящиков провизии: ")
-    val quantityOfProvisions = readLine()!!.toInt()
+    val quantityOfProvisions = readln().toInt()
 
     print("Погода благоприятная? 1 - да/ 0 - нет: ")
     val isWeather = readlnOrNull() == "1"
